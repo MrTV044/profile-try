@@ -1,0 +1,55 @@
+.nav-container {
+  /* position: fixed; */
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+  margin-right: 5px;
+}
+
+.nav-container ul {
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+  list-style-type: none;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-container a {
+  text-decoration: none;
+}
+
+.nav-container a:hover {
+  color: var(--Green);
+}
+
+.nav-container a.active {
+  color: var(--Green);
+  font-weight: 700;
+  animation: Border 5s infinite linear;
+}
+
+@keyframes Border {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: purple;
+  }
+
+  50% {
+    color: blue;
+  }
+
+  75% {
+    color: purple;
+  }
+
+  100% {
+    color: red;
+  }
+}
